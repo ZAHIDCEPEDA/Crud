@@ -1,0 +1,6 @@
+﻿Operación Compilar iniciada..
+1>------ Operación Compilar iniciada: proyecto: Crud, configuración: Debug Any CPU ------
+1>C:\Users\zahid\OneDrive\Escritorio\Aplicaciones Web\Crud\Crud\Views\Registros\Index.cshtml(25,53,25,59): error CS1061: "IEnumerable<Registro>" no contiene una definición para "Estado" ni un método de extensión accesible "Estado" que acepte un primer argumento del tipo "IEnumerable<Registro>" (¿falta alguna directiva using o una referencia de ensamblado?)
+1>C:\Users\zahid\OneDrive\Escritorio\Aplicaciones Web\Crud\Crud\Views\Registros\Index.cshtml(43,52,43,58): error CS1061: "Registro" no contiene una definición para "Estado" ni un método de extensión accesible "Estado" que acepte un primer argumento del tipo "Registro" (¿falta alguna directiva using o una referencia de ensamblado?)
+1>Compilación del proyecto "Crud.csproj" terminada -- ERROR.
+========== Compilar: 0 correctos, 1 incorrectos, 0 actualizados, 0 omitidos ==========
