@@ -38,8 +38,16 @@
             </td>
             <td>
                 @Html.ActionLink("Editar", "Edit", new { id = item.Codigo }, new { onclick = "return confirm('¿Esta seguro de editar?');" }) |
-                @Html.ActionLink("Detalle", "Details", new { id = item.Codigo }, new { onclick = "return confirm('¿Desea ver lo registrado?');" }) |
-                @Html.ActionLink("Borrar", "Delete", new { id = item.Codigo }, new { onclick = "return confirm('¿Esta seguro que desea borrarlo?');" }) 
+                @Html.ActionLink("Detalles", "Details", new { id = item.Codigo }, new { onclick = "return confirm('¿Desea ver lo registrado?');" }) |
+                @Html.ActionLink("Borrar", "Delete", new { id = item.Codigo }, new { onclick = "return confirm('¿Esta seguro que desea borrarlo?');" }) |
+                @if (item.Estado == 1)
+                {
+                    @Html.ActionLink("Desactivar", "Desactivar", new { id = item.Codigo }, new { onclick = "return confirm('¿Esta seguro que desea cambiar el estado?');" })
+                }
+                else
+                {
+                    @Html.ActionLink("Activar", "Activar", new { id = item.Codigo }, new { onclick = "return confirm('¿Esta seguro que desea cambiar el estado?');" })
+                }
             </td>
         </tr>
 }

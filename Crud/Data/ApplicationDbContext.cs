@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Crud.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, UserRole,string>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -22,14 +22,21 @@ namespace Crud.Data
 
                 re.Property(z => z.Nombres)
                 .HasMaxLength(100)
+                .IsRequired()
                 .IsUnicode(false);
 
                 re.Property(z => z.Apellidos)
                .HasMaxLength(100)
+               .IsRequired()
                .IsUnicode(false);
 
                 re.Property(z => z.Direccion)
                 .HasMaxLength(250)
+                .IsRequired()
+                .IsUnicode(false);
+
+                re.Property(z => z.Estado)
+                .IsRequired()
                 .IsUnicode(false);
             });
         }

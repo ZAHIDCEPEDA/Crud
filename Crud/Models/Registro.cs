@@ -11,5 +11,6 @@ namespace Crud.Models
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public string Direccion { get; set; }
+        public int Estado { get; set; }
     }
 }
