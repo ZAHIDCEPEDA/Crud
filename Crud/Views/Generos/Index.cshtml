@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Descrpicion)
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Descripicion)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.FirstOrDefault().Estado)
@@ -25,7 +25,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Descrpicion)
+                @Html.DisplayFor(modelItem => item.Descripicion)
             </td>
             <td>
                 @if (item.Estado == 1)
