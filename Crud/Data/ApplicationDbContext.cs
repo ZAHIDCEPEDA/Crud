@@ -36,7 +36,7 @@ namespace Crud.Data
 
                 entity.ToTable("Usuario");
 
-                entity.Property(e => e.Apellidoss)
+                entity.Property(e => e.Apellidos)
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
